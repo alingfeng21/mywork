@@ -46,7 +46,7 @@
 <p>预览地址
 
 </p>
-<p><a href="http://htmlpreview.github.io/?https://github.com/alingfeng21/works/blob/master/%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E9%A6%96%E9%A1%B5%20%E5%85%BC%E5%AE%B9%E8%87%B3IE7/index.html">http://htmlpreview.github.io/?https://github.com/alingfeng21/works/blob/master/%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E9%A6%96%E9%A1%B5%20%E5%85%BC%E5%AE%B9%E8%87%B3IE7/index.html</a>
+<p><a href="http://htmlpreview.github.io/?https://github.com/alingfeng21/mywork/blob/master/%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E9%A6%96%E9%A1%B5%20%E5%85%BC%E5%AE%B9%E8%87%B3IE8/index.html">http://htmlpreview.github.io/?https://github.com/alingfeng21/mywork/blob/master/%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E9%A6%96%E9%A1%B5%20%E5%85%BC%E5%AE%B9%E8%87%B3IE8/index.html</a>
 
 </p>
 <p>网易云音乐官网首页 兼容至IE8
@@ -71,7 +71,7 @@
 <p>预览地址
 
 </p>
-<p><a href="http://htmlpreview.github.io/?https://github.com/alingfeng21/works/blob/master/%E6%B7%98%E5%AE%9D%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0%E6%95%B4%E7%AB%99%20%E5%85%BC%E5%AE%B9%E8%87%B3IE8/index.html">http://htmlpreview.github.io/?https://github.com/alingfeng21/works/blob/master/%E6%B7%98%E5%AE%9D%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0%E6%95%B4%E7%AB%99%20%E5%85%BC%E5%AE%B9%E8%87%B3IE8/index.html</a>
+<p><a href="http://htmlpreview.github.io/?https://github.com/alingfeng21/mywork/blob/master/%E6%B7%98%E5%AE%9D%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0%E6%95%B4%E7%AB%99%20%E5%85%BC%E5%AE%B9%E8%87%B3IE8/index.html">http://htmlpreview.github.io/?https://github.com/alingfeng21/mywork/blob/master/%E6%B7%98%E5%AE%9D%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0%E6%95%B4%E7%AB%99%20%E5%85%BC%E5%AE%B9%E8%87%B3IE8/index.html</a>
 
 </p>
 <p>淘宝开放平台（部分页面）  兼容至IE8
