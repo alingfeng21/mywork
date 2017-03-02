@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>banner轮播图</title>
+  <style>
+  *{margin:0;padding:0;}
+  a{text-decoration:none;}
+  #banner{width:1000px;height:410px;margin:100px auto;position:relative;}
+  .banner_img{width:1000px;height:410px;position:absolute;left:0;top:0;overflow:hidden;}
+  .banner_img ul li{list-style:none;position:absolute;display:none;}
+  
+  /*图标引用*/
+  @font-face {font-family: 'iconfont/iconfont';
+    src: url('iconfont/iconfont.eot'); /* IE9*/
+    src: url('iconfont/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('iconfont/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('iconfont/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('iconfont/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont{
+    font-family:"iconfont/iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+.left_btn,.right_btn{width:30px;height:40px;background:rgba(0,0,0,0.5);display:block;
+position:absolute;top:50%;margin-top:-20px;color:#fff;font-size:24px;text-align:center;
+line-height:40px;display:none;}
+.left_btn{left:0;}
+.right_btn{right:0;}
+.left_btn:hover{background-color:#828282;}
+.right_btn:hover{background-color:#828282;}
+.dot_btn{width:1000px;position:absolute;left:0;bottom:2px;text-align:right;z-index:1;}
+.dot_btn ol{display:inline-block;padding-right:14px;}
+.dot_btn ol li{list-style:none;width:22px;height:22px;padding:4px;float:left;
+			margin:0 8px;transform:all 0.3s ease 0s;}
+.dot_btn ol li span{width:20px;height:20px;border-radius:12px;background-color:#fff;display:inline-block;}
+.dot_btn ol li:hover span{background-color:#f00;cursor:pointer;}
+.dot_btn ol li.current span{width:18px;height:18px;border-radius:12px;
+		border:3px solid red;background-color:rgba(0,0,0,0);margin-top:-2px;}
+.txt_box{width:1000px;height:40px;
+				background:rgba(0,0,0,0.2);
+			text-indent:14px;color:#fff;
+			font-family:"微软雅黑";line-height:40px;
+			position:absolute;left:0;bottom:0;z-index:0;}
+.txt_box ol li{display:none;}
+.txt_box ol li.txt{display:block;}
+  </style>
+ </head>
+ <body>
+  <div id="banner">
+	<div class="banner_img">
+		<ul>
+			<li style="display:block;"><a><img src="images/banner_1.jpg" /></a></li>
+			<li><a><img src="images/banner_2.jpg" /></a></li>
+			<li><a><img src="images/banner_3.jpg" /></a></li>
+			<li><a><img src="images/banner_4.jpg" /></a></li>
+			<li><a><img src="images/banner_5.jpg" /></a></li>
+		</ul>
+	</div>
+	<a href="javascript:;" class="left_btn iconfont">&#x3465;</a>
+	<a href="javascript:;" class="right_btn iconfont">&#x3464;</a>
+	<div class="dot_btn">
+		<ol>
+			<li class="current"><span></span></li>
+			<li><span></span></li>
+			<li><span></span></li>
+			<li><span></span></li>
+			<li><span></span></li>
+		</ol>
+	</div>
+	<div class="txt_box">
+		<ol>
+			<li class="txt">2015季MBA新生拓展训练集体合影</li>
+			<li>2014季MBA新生拓展训练集体合影</li>
+			<li>2013季MBA新生拓展训练集体合影</li>
+			<li>2012季MBA新生拓展训练集体合影</li>
+			<li>2011季MBA新生拓展训练集体合影</li>
+		</ol>
+	</div>
+
+  </div>
+  <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+  <script>
+  var i=0;
+var oTimer=null;
+$(".right_btn").click(function(){
+	fnNext();
+}); 
+
+$(".left_btn").click(function(){
+	fnPre();
+	
+});
+function fnNext(){
+	i++;
+	if(i>$(".banner_img ul li").length-1)i=0;
+	fnDo();
+};
+
+function fnPre(){
+	if(i<0)i=$(".banner_img ul li").length-1;
+	i--;
+    fnDo();
+};
+function fnDo(){
+    $(".banner_img ul li").eq(i).css("left","0px").fadeIn(500).siblings().fadeOut(500);
+	$(".dot_btn ol li").eq(i).addClass("current").siblings().removeClass();
+	$(".txt_box ol li").eq(i).addClass("txt").siblings().removeClass();
+
+}
+
+$("#banner").hover(function(){
+	clearInterval(oTimer);
+	$(".left_btn,.right_btn").show();
+	},function(){
+		oTimer=setInterval(function(){$(".right_btn").trigger("click")},2000);
+		$(".left_btn,.right_btn").hide();
+	});
+
+  $(".dot_btn ol li").click(function(){
+	if (i!=$(this).index()) {/*判断当前点和之前点*/
+		var oneWidth=$(".banner_img ul li").width();
+		var m=i>$(this).index()?-1:1;
+		$(".banner_img ul li").eq(i).animate({left:-m*oneWidth},function(){$(this).hide();
+		}).end().eq($(this).index()).show().css("left",m*oneWidth).animate({left:0});
+		i=$(this).index();//目的是把当前点的值再传给n，在比较n和$(this).index()大小，为进行此代码时，示例2<3,运行之后要把底部按钮往回点击时需要此条语句赋值，把$(this).index()传给n，结果是3>2，所以才移动图片的
+		$(".dot_btn ol li").eq(i).addClass("current").siblings().removeClass();
+	    $(".txt_box ol li").eq(i).addClass("txt").siblings().removeClass();
+
+	};
+})
+
+oTimer=setInterval(function(){$(".right_btn").trigger("click")},1000);
+  </script>
+ </body>
+</html>
