@@ -90,5 +90,5 @@
 
 </p>
 <p>（5）同时也使用了雪碧图，减少HTTP请求
-Edit By <a href="http://mahua.jser.me">MaHua</a></p>
+</p>
 </body></html>
