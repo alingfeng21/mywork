@@ -13,6 +13,13 @@
 主要内容：主要记录北交大MBA学生的拓展训练活动，展现师生英姿风采
 技术支持： editplus编辑器，采用html5新标签布局，运用css3新属性，使页面更富有交互性。
 项目收获：提升代码的熟练度，将各个文件单独存放，便于日后修改和维护，对于web前端htm5l+css3有了更清晰的认识，对于web新技术产生了更大的兴趣。</code></pre>
+<p>预览地址
+
+</p>
+<p>   <a href="http://htmlpreview.github.io/?https://github.com/alingfeng21/mywork/blob/master/%E5%8C%97%E4%BA%A4%E5%A4%A72015%E7%BA%A7%E5%AD%A6%E7%94%9F%E6%8B%93%E5%B1%95/index.html"></a>
+
+</p>
+
 <p>2.北京航空航天大学第十二届MBA年会（专题页） 
 
 </p>
@@ -21,6 +28,13 @@
 主要内容：记录北航第十二届MBA年会盛况
 技术支持：editplus编辑器，采用div+css布局，现场上传图片，，兼容高版本浏览器    
 项目收获：熟练使用ps进行切图，快速制作页面，对于代码规划有了更深刻的认识和实践 </code></pre>
+
+<p>预览地址
+
+</p>
+<p>   <a href="http://htmlpreview.github.io/?https://github.com/alingfeng21/mywork/blob/master/%E5%8C%97%E8%88%AA2015%E5%B9%B4%E7%AC%AC%E5%8D%81%E4%BA%8C%E5%B1%8AMBA%E5%B9%B4%E4%BC%9A/zhuanti.html"></a>
+
+</p>
 <p>二、个人作品
 
 </p>
